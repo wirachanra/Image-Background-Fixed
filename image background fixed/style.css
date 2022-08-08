@@ -1,0 +1,45 @@
+* {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+div {
+ height: 300px;
+ min-height: 100vh;
+ color: white;
+ border: 2px solid black;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ text-transform: uppercase;
+ font-size: 2rem;
+}
+
+.big-img {
+ background: url("./test.jpg");
+ background-repeat: no-repeat;
+ background-size: cover; 
+ background-attachment: fixed;
+ /* background-size: contain; */
+ /* background-size untuk mengatur ukuran background menjadi full jika kita pilih cover 
+ kalau conten mengambul seluruh gambar hanya saja size menjadi ukuran sesuai gambar*/
+ background-position: center;
+ /* untuk background position untuk mengatur posisi dari background */
+}
+
+.small-img {
+ background: url('./try.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  /* Background-attachment: fixed untuk background fixed saat scroled ke bawah gambar tetap pada 
+  psisi */
+  /* background-position: 20% 50%; */
+
+}
+.folder-img {
+ background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)), url("./folder.jpg");
+ background-size: contain;
+ background-attachment: fixed;
+}
